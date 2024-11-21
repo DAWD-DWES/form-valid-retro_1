@@ -1,0 +1,155 @@
+body {
+    font: normal 1em "Fira Sans", "Helvetica Neue", sans-serif;
+    background: #3AAFAB;
+    color: #fff;
+    height: 100vh;
+}
+
+.flex-page {
+    flex-flow: column nowrap;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-outer {
+    display:flex;
+    width: 80%;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre cada fila */
+    margin: 20px;
+}
+
+.capaform {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 40px;
+    border: 5px solid orange
+}
+
+input[type="text"], input[type="password"], input[type="tel"], select, input[type="date"], input[type="number"] {
+    background: #3AAFAB;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-size: 1em;
+    padding: 8px;
+}
+
+input[type="text"], input[type="password"], input[type="tel"] {
+   flex-grow: 1;
+}
+
+.form-section {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center; /* Alinea los elementos en el centro verticalmente */
+    gap: 10px; /* Espacio entre la etiqueta y el input */
+}
+
+.form-section label {
+    flex: 0 0 150px; /* Tamaño fijo para la etiqueta */
+}
+
+.select-section {
+    display:flex;
+    flex-flow: column;
+    flex: none;
+}
+
+.summary-section {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit-section {
+    display:flex;
+    justify-content: center;
+    flex: auto;
+}
+
+.submit {
+    padding: 0 20px;
+    height: 30px;
+    line-height: 30px; /* Centra el texto verticalmente */
+    background: orange;
+    text-align: center;
+    text-decoration: none; /* Elimina el subrayado */
+    border-radius: 5px; /* Opcional: redondea las esquinas */
+    font-weight: bold;
+}
+
+/* Contenedor para centrar la imagen */
+.foto-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilo de la imagen */
+.foto-usuario {
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    border-radius: 50%; /* Forma circular */
+    border: 3px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    color: #000; /* Color negro para el texto */
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+tr:hover {
+    background-color: #e0f7fa;
+}
+
+a.submit {
+    display: inline-block;
+    padding: 0 20px;
+    height: 30px;
+    line-height: 30px; /* Centra el texto verticalmente */
+    background: orange;
+    text-align: center;
+    text-decoration: none; /* Elimina el subrayado */
+    border-radius: 5px; /* Opcional: redondea las esquinas */
+    font-weight: bold;
+}
+
+.error {
+    flex: 0 0 200px; /* Tamaño fijo para la etiqueta */
+    color: red;
+    font-size: 1em;
+    margin-left: 10px;
+    visibility: hidden; /* Oculto por defecto */
+}
+
+.error-visible {
+    visibility: visible;
+}
